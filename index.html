@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigBen | Intro Section With Drop Down Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <nav>
+        <img src="images/logo.svg" alt="">
+        <div class="">
+          <div class="MenuItems">
+            
+            <div class="NavColumns MenuGaps">
+              <div class="FeaturesTab" onclick="TheFeatures()" onpointerover="TheFeatures()">
+                <p class="DesktopHover">Features</p> <img src="images/icon-arrow-down.svg" alt="" id="FArrowDown">
+                <img src="images/icon-arrow-up.svg" alt="" id="FArrowUp" class="Hidden">
+              </div>
+  
+              <div class="Features Hidden" id="Features"> 
+                
+                <div class="FeaturesOptions BoxShadowing">
+                  
+                  <div class="FeaturesList"><img src="images/icon-todo.svg" alt=""><p>Todo List</p></div>
+                  <div class="FeaturesList"><img src="images/icon-calendar.svg" alt=""><p>Calender</p></div>
+                  <div class="FeaturesList"><img src="images/icon-reminders.svg" alt=""><p>Reminder</p></div>
+                  <div class="FeaturesList"><img src="images/icon-planning.svg" alt=""><p>Planning</p></div>
+                </div>
+              </div>
+            </div>
+            
+          <div class="NavColumns MenuGaps">
+            <div class="CompanyTab" onclick="TheCompany()" onpointerover="TheCompany()">
+              <p  class="DesktopHover">Company</p>
+              <img src="images/icon-arrow-down.svg" alt="" id="CArrowDown">
+              <img src="images/icon-arrow-up.svg" alt="" class="Hidden" id="CArrowUp">
+            </div>
+            <div class="Company Hidden" id="Company">
+
+              <div class="CompanyOptions Hidden">
+
+                <div class="BoxShadowing">
+                  <div class="CompanyList"><p>History</p></div>
+                  <div class="CompanyList" ><p>Our Team</p></div>
+                  <div class="CompanyList"><p>Blog</p>
+                </div>
+                </div>
+               </div>
+            </div>
+          </div>
+            <div class="Careers MenuGaps">
+              <p  class="DesktopHover">Careers</p>
+            </div>
+  
+            <div class="About MenuGaps">
+              <p  class="DesktopHover">About</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="images/icon-menu.svg" alt="Menu" class="Menu" onclick="SideBarOpen()">
+
+
+        <div class="AccountDesktop">
+          <div class="Login" id="LoginClick">Login</div>
+          <div class="Register" id="RegisterClick" >
+            Register
+          </div>
+      </nav>
+      <section>
+        <div class="HeroImage">
+         
+        </div>
+        
+        <div class="Message">
+          <h1>Make remote work</h1>
+          <p> 
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button>
+            learn more
+          </button>
+          <div class="Sponsors">
+            <img src="images/client-databiz.svg" alt="">
+            <img src="images/client-audiophile.svg" alt="">
+            <img src="images/client-meet.svg" alt="">
+            <img src="images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <div class="SideBar Hidden" id="SideBar">
+        <div class="SideContent">
+          <img src="images/icon-close-menu.svg" alt="close menu" class="CloseMenu" onclick="SideBarClose()">
+
+          <div class="MenuOptions">
+            
+            <div class="FeaturesTab" onclick="TheFeaturesMobile()">
+              <p>Features</p> <img src="images/icon-arrow-down.svg" alt="" id="FArrowDownMobile">
+              <img src="images/icon-arrow-up.svg" alt="" id="FArrowUpMobile" class="Hidden">
+            </div>
+
+            <div class="Features Hidden" id="FeaturesMobile"> 
+              
+              <div class="FeaturesOptions">
+                
+                <div class="FeaturesList"><img src="images/icon-todo.svg" alt=""><p>Todo List</p></div>
+                <div class="FeaturesList"><img src="images/icon-calendar.svg" alt=""><p>Calender</p></div>
+                <div class="FeaturesList"><img src="images/icon-reminders.svg" alt=""><p>Reminder</p></div>
+                <div class="FeaturesList"><img src="images/icon-planning.svg" alt=""><p>Planning</p></div>
+              </div>
+            </div>
+            
+            <div class="CompanyTab" onclick="TheCompanyMobile()">
+              <p>Company</p>
+              <img src="images/icon-arrow-down.svg" alt="" id="CArrowDownMobile">
+              <img src="images/icon-arrow-up.svg" alt="" class="Hidden" id="CArrowUpMobile">
+            </div>
+            <div class="Company Hidden" id="CompanyMobile">
+
+              <div class="CompanyOptions Hidden">
+                <div class="CompanyList"><p>History</p></div>
+                <div class="CompanyList" ><p>Our Team</p>
+                </div>
+                <div class="CompanyList">
+                  <p>
+                    Blog
+                  </p>
+                </div>
+               </div>
+            </div>
+  
+            <div class="Careers">
+              <p>Careers</p>
+            </div>
+  
+            <div class="About">
+              <p>About</p>
+            </div>
+          </div>
+  
+          <div class="Account">
+            <div class="Login" id="LoginClick2">Login</div>
+            <div class="Register" id="RegisterClick2">
+              Register
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+</body>
+  <script src="script.js"></script>
+</html>

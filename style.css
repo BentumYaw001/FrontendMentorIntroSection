@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main,nav,.Message{
+    display: flex;
+}
+main,.Message{
+    flex-direction: column;
+}
+
+.MenuItems{
+    display: none;
+}
+main{
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+p,.Login,.Register{
+    color: hsl(0, 0%, 41%);
+}
+
+.Message p,.Message h1{
+    text-align: center;
+}
+
+.Message{
+    align-items: center;
+    justify-content: center;
+}
+
+.CloseMenu,.FeaturesTab
+,.CompanyTab,.Careers,
+.About,button,.Menu{
+    cursor: pointer;
+}
+
+.HeroImage,
+nav,h1,p
+,button{
+    margin-bottom: 20px;
+}
+
+.HeroImage{
+    background-image: url('images/image-hero-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+
+nav{
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    border: 1px solid black;
+    color: black;
+}
+
+.Sponsors{
+    margin-top:30px;
+    margin-bottom: 120px;
+}
+
+.Sponsors img{
+    width: 55px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+.Hidden{
+    display: none;
+}
+
+
+
+/* SideBar styling starts here. */
+
+.SideBar{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color:hsl(0, 0%, 8%,0.5);
+    overflow: hidden;
+}
+
+.SideContent{
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 0;
+    padding: 25px;
+    width: 40%;
+    height: 100%;
+}
+
+.Register,.Login{
+   margin:20px 0px;
+   padding: 10px 30px;
+   text-align: center;
+   border-radius: 10px;
+   width: 70%;
+   cursor: pointer;
+   font-size: 1.4rem;
+}
+
+.Register{
+    border: 1px solid black;
+}
+
+
+.CloseMenu{
+    margin-left: 90%;
+}
+
+.FeaturesTab,.CompanyTab,.Careers,.About,
+.FeaturesList{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.Careers,.About{
+    margin-bottom: 7px;
+}
+
+.FeaturesTab img,.CompanyTab img{
+    width: 10px;
+    height: 7px;
+    margin :10px;
+}
+
+.FeaturesTab p,.CompanyTab p{
+    margin: 0;
+    padding: 0;
+}
+
+.FeaturesOptions,.CompanyOptions{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.FeaturesList{
+    margin-bottom: 0px;
+}
+
+.FeaturesList img{
+  margin-right: 15px;
+  margin-top: -15px;
+}
+
+.MenuOptions p{
+    font-size: 1.4rem;
+}
+
+.AccountDesktop{
+    display: none;
+}
+/* SideBar styling ends here. */
+
+
+
+@media(min-width:900px){
+   section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    nav{
+        justify-content: start;
+        position: relative;
+    }
+    .MenuItems{
+        display: flex;
+        margin-left: 50px;
+        align-items: start;
+        position: absolute;
+       
+    }
+
+        .NavColums{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .MenuGaps{
+            margin-right: 50px;
+        }
+    .Sponsors{
+        margin-top: 85px;
+    }
+    .HeroImage{
+        background-image: url('images/image-hero-desktop.png');
+        order: 2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 550px;
+        width: 100%;
+    }
+   
+    .Message{
+        flex-basis: 90%;
+        width: 50%;
+        padding: 30px;
+        justify-content: start;
+        align-items: start;
+        margin: 40px;
+        margin-left: 100px;
+
+    }
+    
+    button{
+        margin: 20px 0px;
+    }
+    .Message p,.Menu h1{
+        text-align: left;
+    }
+    .Menu,.SideBar{
+        display: none;
+    }
+    
+    nav{
+        padding: 20px;
+        padding-left: 40px;
+    }
+    .AccountDesktop{
+        display: flex;
+        position: absolute;
+        right: 25px;
+        top: 0px;
+    }
+   .Register{
+    margin-left: 30px;
+   }
+
+   .DesktopHover:hover{
+    font-weight: bold;
+    color: black;
+    transition: 0.4s ease-in-out;
+   }
+
+   .BoxShadowing{
+    background-color: #f4f4f4;
+    padding: 20px 40px;
+    box-shadow: 
+      5px 0 10px rgba(0, 0, 0, 0.2),  
+      -5px 0 10px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+  }
+.FeaturesList,.CompanyList{
+    margin-bottom: -30px;
+}
+
+.FeaturesList{
+    margin-bottom: -50px;
+}
+.FeaturesList p{
+    margin-top: 25px;
+ }
+
+}
+
+
+@media(min-width:1130px){
+    .HeroImage{
+        height: 630px;
+    }
+    h1{
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+}
