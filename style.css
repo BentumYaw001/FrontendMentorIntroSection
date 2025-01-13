@@ -16,6 +16,7 @@ main{
     width: 100%;
     margin: 0px auto;
     position: relative;
+    font-family: 'Epilogue';
 }
 
 p,.Login,.Register{
